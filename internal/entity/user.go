@@ -1,7 +1,6 @@
 package entity
 
 import (
-	bConst "github.com/bamboo-services/bamboo-base-go-template/internal/constant"
 	xModels "github.com/bamboo-services/bamboo-base-go/models"
 	xSnowflake "github.com/bamboo-services/bamboo-base-go/snowflake"
 )
@@ -16,5 +15,5 @@ type User struct {
 }
 
 func (_ *User) GetGene() xSnowflake.Gene {
-	return bConst.GeneForUser
+	return xSnowflake.GeneUser
 }
