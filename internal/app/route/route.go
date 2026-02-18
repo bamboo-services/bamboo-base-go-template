@@ -3,6 +3,7 @@ package route
 import (
 	"context"
 
+	xEnv "github.com/bamboo-services/bamboo-base-go/env"
 	xMiddle "github.com/bamboo-services/bamboo-base-go/middleware"
 	xReg "github.com/bamboo-services/bamboo-base-go/register"
 	xRoute "github.com/bamboo-services/bamboo-base-go/route"
@@ -26,6 +27,10 @@ func NewRoute(reg *xReg.Reg) {
 	r.engine.Use(xMiddle.ResponseMiddleware)
 	r.engine.Use(xMiddle.ReleaseAllCors)
 	r.engine.Use(xMiddle.AllowOption)
+
+	if xEnv.GetEnvBool(xEnv.Debug, false) {
+		swaggerRegister(r.engine)
+	}
 
 	apiRouter := r.engine.Group("/api/v1")
 	r.healthRouter(apiRouter)
