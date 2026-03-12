@@ -3,8 +3,8 @@ package startup
 import (
 	"context"
 
-	xCtx "github.com/bamboo-services/bamboo-base-go/context"
-	xRegNode "github.com/bamboo-services/bamboo-base-go/register/node"
+	xCtx "github.com/bamboo-services/bamboo-base-go/defined/context"
+	xRegNode "github.com/bamboo-services/bamboo-base-go/major/register/node"
 )
 
 type reg struct {

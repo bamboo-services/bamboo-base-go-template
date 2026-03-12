@@ -3,8 +3,8 @@ package repository
 import (
 	"context"
 
-	xError "github.com/bamboo-services/bamboo-base-go/error"
-	xLog "github.com/bamboo-services/bamboo-base-go/log"
+	xError "github.com/bamboo-services/bamboo-base-go/common/error"
+	xLog "github.com/bamboo-services/bamboo-base-go/common/log"
 	"github.com/redis/go-redis/v9"
 	"gorm.io/gorm"
 )

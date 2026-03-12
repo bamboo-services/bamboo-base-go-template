@@ -6,10 +6,10 @@ import (
 
 	apiHealth "github.com/bamboo-services/bamboo-base-go-template/api/health"
 	"github.com/bamboo-services/bamboo-base-go-template/internal/repository"
-	xEnv "github.com/bamboo-services/bamboo-base-go/env"
-	xError "github.com/bamboo-services/bamboo-base-go/error"
-	xLog "github.com/bamboo-services/bamboo-base-go/log"
-	xCtxUtil "github.com/bamboo-services/bamboo-base-go/utility/ctxutil"
+	xError "github.com/bamboo-services/bamboo-base-go/common/error"
+	xLog "github.com/bamboo-services/bamboo-base-go/common/log"
+	xCtxUtil "github.com/bamboo-services/bamboo-base-go/common/utility/context"
+	xEnv "github.com/bamboo-services/bamboo-base-go/defined/env"
 	"github.com/gin-gonic/gin"
 )
 

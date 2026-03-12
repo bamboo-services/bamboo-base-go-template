@@ -1,8 +1,8 @@
 package entity
 
 import (
-	xModels "github.com/bamboo-services/bamboo-base-go/models"
-	xSnowflake "github.com/bamboo-services/bamboo-base-go/snowflake"
+	xSnowflake "github.com/bamboo-services/bamboo-base-go/common/snowflake"
+	xModels "github.com/bamboo-services/bamboo-base-go/major/models"
 )
 
 type User struct {

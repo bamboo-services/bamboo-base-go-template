@@ -2,7 +2,7 @@ package route
 
 import (
 	"github.com/bamboo-services/bamboo-base-go-template/docs"
-	xEnv "github.com/bamboo-services/bamboo-base-go/env"
+	xEnv "github.com/bamboo-services/bamboo-base-go/defined/env"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"

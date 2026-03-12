@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/bamboo-services/bamboo-base-go-template/internal/entity"
-	xEnv "github.com/bamboo-services/bamboo-base-go/env"
-	xLog "github.com/bamboo-services/bamboo-base-go/log"
+	xLog "github.com/bamboo-services/bamboo-base-go/common/log"
+	xEnv "github.com/bamboo-services/bamboo-base-go/defined/env"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"

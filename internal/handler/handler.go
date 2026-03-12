@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/bamboo-services/bamboo-base-go-template/internal/logic"
-	xLog "github.com/bamboo-services/bamboo-base-go/log"
+	xLog "github.com/bamboo-services/bamboo-base-go/common/log"
 )
 
 type service struct {

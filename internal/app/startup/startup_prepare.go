@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/bamboo-services/bamboo-base-go-template/internal/app/startup/prepare"
-	xLog "github.com/bamboo-services/bamboo-base-go/log"
+	xLog "github.com/bamboo-services/bamboo-base-go/common/log"
 )
 
 func (r *reg) businessDataPrepare(ctx context.Context) (any, error) {
